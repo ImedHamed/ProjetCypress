@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-01-11T13:41:20.093Z",
+    "end": "2025-01-11T13:41:30.618Z",
+    "duration": 10525,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f8c23d3f-85ca-4d4a-b08a-b305b609a131",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Buzz.cy.js",
+      "file": "cypress\\e2e\\Buzz.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d6a6f4e9-e6fe-4e8b-8618-820afaa15ba4",
+          "title": "Buzz Tests on Orange HRM Application",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify user able to post in newsfeed of Buzz Module",
+              "fullTitle": "Buzz Tests on Orange HRM Application Verify user able to post in newsfeed of Buzz Module",
+              "timedOut": null,
+              "duration": 10434,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('textarea').should('be.visible').type('\"Hey My first post, Whats on your mind\"');\ncy.get('button[type=\"submit\"]').click({\n  force: true\n});\ncy.get('.oxd-toast-content.oxd-toast-content--success').should('be.visible').contains('Successfully Saved');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.oxd-toast-content.oxd-toast-content--success`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.oxd-toast-content.oxd-toast-content--success`, but never found it.\n    at Context.eval (webpack://mon-projet-cypress/./cypress/e2e/Buzz.cy.js:17:9)",
+                "diff": null
+              },
+              "uuid": "84427753-0a3e-4676-8de6-9c4fc7e016a5",
+              "parentUUID": "d6a6f4e9-e6fe-4e8b-8618-820afaa15ba4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "84427753-0a3e-4676-8de6-9c4fc7e016a5"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 10434,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

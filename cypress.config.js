@@ -10,13 +10,13 @@ module.exports = defineConfig({
     
     baseUrl : 'https://opensource-demo.orangehrmlive.com/',
     
-    "reporter": "mochawesome",
+    "reporter": 'mochawesome',
     "reporterOptions": {
       "reportDir": "cypress/reports",
       "overwrite": false,
       "html": true,
-      "json": true,
-      "charts": true
+      "json": false,
+      "charts": true,
     },
 
    

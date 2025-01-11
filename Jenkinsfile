@@ -7,7 +7,7 @@ pipeline {
 
     environment {
         // Définir le chemin de base pour éviter les répétitions
-        PROJECT_PATH = "C:\Users\Imed Hamed\Desktop\mon-projet-cypress"
+        PROJECT_PATH = "C:/Users/Imed Hamed/Desktop/mon-projet-cypress"
     }
 
     stages {
